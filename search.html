@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SyneTalent - Synechron's talent portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <!-- START nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.svg" width="180px" alt="SyneTalent"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navsearch" id="ftco-nav">
+        <div class="field-icon-wrap navbar-nav ml-auto">
+          <div class="icon"><span class="ion-ios-search"></span></div>
+          <input type="text" id="search" name="query" class="form-control">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+  <!-- START header -->
+  <div class="block-hero-short item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12">
+              <h2 class="heading mt-1">Find the <span style="color: #FAE600">talent</span> you need</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END header -->
+
+  <!-- Search box -->
+  <div class="container">
+      <div class="block-search">
+            <form method="get" action="search.html">
+              <div class="row">
+                <div id="filter1" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="location" id="" class="form-control">
+                      <option value="" disabled selected>Location</option>
+                      <option value="">-- Any location --</option>
+                      <option value="" disabled>N.America</option>
+                      <option value="NY">New York</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NC">N.Carolina</option>
+                      <option value="FL">Florida</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="VI">Virginia</option>
+                      <option value="TO">Toronto</option>
+                      <option value="ON">Ontario</option>
+                      <option value="QU">Quebec</option>
+                      <option value="" disabled>Europe</option>
+                      <option value="PR">Paris</option>
+                      <option value="AM">Amstadam</option>
+                      <option value="ZU">Zurich</option>
+                      <option value="GE">Geneva</option>
+                      <option value="LU">Luxembourg</option>
+                      <option value="FF">Frankfurt</option>
+                      <option value="MI">Milano</option>
+                      <option value="NO">Novi Sad</option>
+                      <option value="BU">Budapest</option>
+                      <option value="" disabled>Middle East</option>
+                      <option value="DB">Dubai</option>
+                      <option value="AD">Abu Dhabi</option>
+                      <option value="" disabled>Asia-Pacific</option>
+                      <option value="PU">Pune</option>
+                      <option value="MU">Mumbai</option>
+                      <option value="BM">Bengaluru, MEB</option>
+                      <option value="BG">Bengaluru, GTP</option>
+                      <option value="HY">Hyderabad</option>
+                      <option value="CH">Chennai</option>
+                      <option value="SG">Singapore</option>
+                      <option value="HK">Hong Kong</option>
+                      <option value="MN">Manila</option>
+                      <option value="TK">Tokyo</option>
+                      <option value="NS">New South Wales</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="filter2" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="designation" id="" class="form-control">
+                      <option value="" disabled selected>Designation</option>
+                      <option value="">-- Any designation --</option>
+                      <option value="Designer">Designer</option>
+                      <option value="Developer">Developer</option>
+                      <option value="Strategists">Strategists</option>
+                      <option value="Tech">Technologists</option>
+                      <option value="Data">Data Scientists</option>
+                      <option value="Data">Others</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="filter3" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="skillset" id="" class="form-control">
+                      <option value="" disabled selected>Skillset</option>
+                      <option value="">-- Any skillset --</option>
+                      <option value="Digital">Digital</option>
+                      <option value="DSG">Data Science</option>
+                      <option value="Java">Java</option>
+                      <option value="Microsoft">Microsoft</option>
+                      <option value="QA">Quality Assurance</option>
+                      <option value="SBC">Business Consulting</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="filter4" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="acct" id="" class="form-control">
+                      <option value="" disabled selected>Account</option>
+                      <option value="">-- Any account --</option>
+                      <option value="Dubai">Dubai</option>
+                      <option value="Charlotte">Charlotte</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Amstadam">Amstadam</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="filter5" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="exp" id="" class="form-control">
+                      <option value="" disabled selected>Experience</option>
+                      <option value="">-- Any experience --</option>
+                      <option value="jr">Junior</option>
+                      <option value="md">Middle</option>
+                      <option value="sr">Senior</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="filter6" class="col-6 col-md-4 col-lg-2 mobile-hide">
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
+                    <select name="status" id="" class="form-control">
+                      <option value="" disabled selected>Status</option>
+                      <option value="">-- Any status --</option>
+                      <option value="current">Current</option>
+                      <option value="blocked">Blocked</option>
+                      <option value="billed">Billed</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control search" id="search" name="query" class="form-control">
+                    <button class="btn btn-primary submit" type="submit"><span class="ion-ios-search"></span></button>
+                  </div>
+                </div>
+                <div id="sort" class="offset-4 col-4 col-md-2 mobile-hide">
+                    <button class="btn btn-primary btn-block" type="button">Sort &nbsp; <span class="ion-ios-funnel"></span></button>
+                </div>
+                <div class="toggle col-12 d-xs-block d-sm-none">
+                  <div id="show-filters" class="text-center" onclick="toggleHide()">
+                    Filters and Sort <br> <span class="ion-ios-arrow-down"></span>
+                  </div>
+                  <div id="hide-filters" class="text-center mobile-hide" onclick="toggleHide()">
+                    <span class="ion-ios-arrow-up"></span> <br> Close
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+  </div>
+  <!-- END Search box -->
+
+  <!-- START Listing -->
+  <div class="site-section">
+
+    <div class="container">
+      <div class="text-center">
+        <p>10 records found</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/sg.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image blocked">
+                  <img src="images/person_6.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Nancy Tan</h2>
+                  <span class="meta">UI Designer</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Singapore
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Digital
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/aus.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image current">
+                  <img src="images/person_2.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Lilly Bouton</h2>
+                  <span class="meta">Sr. Associate</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          New South Wales
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Quality Assurance
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/usa.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image billed">
+                  <img src="images/person_4.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Shannon Webber</h2>
+                  <span class="meta">Lead</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Charlotte
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Java
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/uk.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image billed">
+                  <img src="images/person_1.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Jane Doe</h2>
+                  <span class="meta">UI Developer</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          London
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Digital
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/usa.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image blocked">
+                  <img src="images/person_7.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Rose Barker</h2>
+                  <span class="meta">UX Designer</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Novi Sad
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Digital
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-profilecard">
+            <div class="flag d-none d-md-block">
+              <img src="images/rus.jpg" alt="flag">
+            </div>
+            <div class="vcard">
+              <div class="d-flex">
+                <div class="image current">
+                  <img src="images/person_3.jpg" alt="Person here">
+                  <div class="status"></div>
+                </div>
+                <div class="name-text">
+                  <h2 class="heading">Vsevolod Tretyakov</h2>
+                  <span class="meta">Data Scientist</span>
+                  <div class="details row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-navigate"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          Dubai
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3 col-md-12 icon">
+                          <span class="ion-ios-construct"></span>
+                        </div>
+                        <div class="col-8 col-md-12 text">
+                          DSG
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block" type="button" onclick="location.href='profile.html'">View</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-5">
+                <div class="col-md-12 pt-5">
+                  <ul class="pagination custom-pagination">
+                    <li class="page-item prev">
+                      <a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
+                  </ul>
+
+
+                </div>
+              </div>
+  </div>
+  </div>
+  <!-- END Listing -->
+
+  <!-- START Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-12 text-left">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function toggleHide() {
+        var a = document.getElementById("filter1");
+        var b = document.getElementById("filter2");
+        var c = document.getElementById("filter3");
+        var d = document.getElementById("filter4");
+        var e = document.getElementById("filter5");
+        var f = document.getElementById("filter6");
+        var x = document.getElementById("sort");
+        var y = document.getElementById("show-filters");
+        var z = document.getElementById("hide-filters");
+        if (y.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+        } else {
+            a.style.display = "block";
+            b.style.display = "block";
+            c.style.display = "block";
+            d.style.display = "block";
+            e.style.display = "block";
+            f.style.display = "block";
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+  </script>
+  </body>
+</html>
