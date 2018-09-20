@@ -8162,7 +8162,7 @@ input#search.form-control {
 .block-search {
   margin-top: -130px; }
 .block-bio {
-  margin-top: -350px; }
+  margin-top: -450px; }
 .block-quicksearch, .block-search, .block-bio {
   z-index: 1;
   position: relative;
@@ -8302,12 +8302,12 @@ input#search.form-control {
       opacity: 1;
       background: #fff; }
 
-.block-hero-short, .block-hero {
+.block-hero-short, .block-hero, .block-hero-full {
   background-size: cover;
   background-color: #ccc;
   padding: 0;
   position: relative; }
-  .block-hero-short:before, .block-hero:before {
+  .block-hero-short:before, .block-hero:before, .block-hero-full:before {
     background: #000;
     position: absolute;
     content: "";
@@ -8325,6 +8325,9 @@ input#search.form-control {
   .block-hero-short, .block-hero-short .row {
       min-height: 200px;
       height: 40vh; }
+  .block-hero-full, .block-hero-full .row {
+      height: 100vh;
+  }
   .block-hero-short .heading,
   .block-hero .heading {
     font-family: "Carnas";
@@ -8525,6 +8528,10 @@ input#search.form-control {
     margin-left: -20px; }
   .block-bio .vcard .d-flex .name-text .details .icon{
     text-align: center;
+  }
+  .block-bio .vcard .bio {
+    font-size: 18px;
+    text-align: justify;
   }
 
 
