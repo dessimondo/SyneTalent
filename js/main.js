@@ -1,8 +1,3 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
-
 $(document).ready(function($) {
 
 	"use strict";
@@ -14,8 +9,7 @@ $(document).ready(function($) {
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: 'scroll'
-  });
-
+	});
 
 	// loader
 	var loader = function() {
@@ -48,31 +42,8 @@ $(document).ready(function($) {
 			}
 		});
 
-		$('.nonloop-block-13').owlCarousel({
-	    center: false,
-	    items: 1,
-	    loop: false,
-			stagePadding: 0,
-	    margin: 20,
-	    nav: true,
-			navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-	    responsive:{
-        600:{
-        	margin: 20,
-          items: 2
-        },
-        1000:{
-        	margin: 20,
-          items: 2
-        },
-        1200:{
-        	margin: 20,
-          items: 3
-        }
-	    }
-		});
 
-		$('.loop-block-31').owlCarousel({
+		$('.loop-block-hero').owlCarousel({
 			loop: true,
 			margin: 0,
 			nav: true,
@@ -229,44 +200,65 @@ $(document).ready(function($) {
 	};
 	OnePageNav();
 
-
-	// magnific popup
-	$('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
-  });
-
-  $('#checkin_date, #checkout_date').datepicker({
-	  'format': 'd MM, yyyy',
-	  'autoclose': true
-	});
-
-
-
 });
 
+var toggleHide = function() {
+	var a = document.getElementById("filter1");
+	var b = document.getElementById("filter2");
+	var c = document.getElementById("filter3");
+	var d = document.getElementById("filter4");
+	var e = document.getElementById("filter5");
+	var f = document.getElementById("filter6");
+	var x = document.getElementById("sort");
+	var y = document.getElementById("show-filters");
+	var z = document.getElementById("hide-filters");
+	if (y.style.display === "none") {
+			a.style.display = "none";
+			b.style.display = "none";
+			c.style.display = "none";
+			d.style.display = "none";
+			e.style.display = "none";
+			f.style.display = "none";
+			x.style.display = "none";
+			y.style.display = "block";
+			z.style.display = "none";
+	} else {
+			a.style.display = "block";
+			b.style.display = "block";
+			c.style.display = "block";
+			d.style.display = "block";
+			e.style.display = "block";
+			f.style.display = "block";
+			x.style.display = "block";
+			y.style.display = "none";
+			z.style.display = "block";
+	}
+}
+
+Date.daysBetween = function( date1, date2 ) {   
+	//Get 1 year in milliseconds   
+	var one_year=1000*60*60*24*365;    
+	// Convert both dates to milliseconds
+	var date1_ms = date1.getTime();   
+	var date2_ms = date2.getTime();    
+	// Calculate the difference in milliseconds  
+	var difference_ms = date2_ms - date1_ms;        
+	// Convert back to years
+	var diff = Math.floor(difference_ms/one_year);
+	var diff_string = diff<1 ? "< 1 year" : diff + "+ years";
+	return diff_string; 
+	}
+
+var getParams = function() {
+	var params = {},
+			pairs = document.URL.split('?')
+						.pop()
+						.split('&');
+
+	for (var i = 0, p; i < pairs.length; i++) {
+				p = pairs[i].split('=');
+				params[ p[0] ] =  p[1];
+	}     
+
+	return params;
+}
