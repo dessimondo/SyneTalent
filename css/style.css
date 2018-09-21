@@ -1344,20 +1344,16 @@ pre {
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent; }
-  .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-bottom: 1px solid #dee2e6; }
-    .table tbody tr:last-child td {
-      border: none;
-    }
+  .table th, .table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(233, 233, 233); }
+  .table td:nth-child(3), .table td:nth-child(4) {
+    color: rgb(133, 133, 133); }
+  .table tbody tr:last-child td {
+    border: none; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6; }
-  .table tbody + tbody {
-    border-top: 2px solid #dee2e6; }
-  .table .table {
-    background-color: #fff; }
+    border-bottom: 2px solid rgb(233, 233, 233); }
 
 .table-sm th,
 .table-sm td {
@@ -8468,13 +8464,13 @@ input#search.form-control {
       max-width: 100%;
       border-radius: 50%; }
       .block-profilecard .vcard .d-flex .current img {
-        border: 5px solid #7CB51850;
+        border: 5px solid rgba(123, 181, 24, 0.5);
       }
       .block-profilecard .vcard .d-flex .blocked img {
-        border: 5px solid #FAE60050;
+        border: 5px solid rgba(250, 230, 0, 0.5);
       }
       .block-profilecard .vcard .d-flex .billed img {
-        border: 5px solid #FB610750;
+        border: 5px solid rgba(251, 96, 7, 0.5);
       }
       .block-profilecard .vcard .d-flex .current .status {
         background-image: url("../images/Current.png");
@@ -8558,13 +8554,13 @@ input#search.form-control {
     width: 50%;
     border-radius: 50%; }
   .block-bio .vcard .d-flex .current img {
-    border: 6px solid #7CB518;
+    border: 6px solid rgba(123, 181, 24, 0.5);
   }
   .block-bio .vcard .d-flex .blocked img {
-    border: 6px solid #FAE600;
+    border: 6px solid rgba(250, 230, 0, 0.5);
   }
   .block-bio .vcard .d-flex .billed img {
-    border: 6px solid #FB6107;
+    border: 6px solid rgba(251, 96, 7, 0.5);
   }
   .block-bio .vcard .d-flex .current .status {
     background-image: url("../images/Current.png");
