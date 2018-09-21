@@ -1,0 +1,356 @@
+[
+    {
+      "ID": 160601,
+      "Status": "blocked",
+      "Name": {
+        "Full": "Monica Cheng Shi Ting",
+        "Alias": "Monica Cheng",
+        "Short": "Monica Cheng"
+      },
+      "Citizenship": "Singapore",
+      "Country": "SG",
+      "Location": [
+        "Singapore",
+        "Singapore"
+      ],
+      "Account": "APAC BU",
+      "Designation": "UI Designer",
+      "Bio": "<p>Cyclist, maker, guitarist, Vignelli fan and New School grad. Operating at the crossroads of simplicity and purpose to create great work for living breathing human beings. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br> I'm a designer and this is my work.</p>",
+      "Skillset": [
+        "Digital",
+        "Digital"
+      ],
+      "Skills": [
+        "Photoshop",
+        "Sketch",
+        "HTML",
+        "CSS",
+        "InDesign",
+        "Illustrator"
+      ],
+      "Reporting Manager": {
+        "Name": "Eleanor Yang",
+        "Email": "eleanor.yang@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "Synechron Innovation",
+          "Logo": "synechron-logo",
+          "Start": "10-08-2018",
+          "End": "17-01-2019"
+        }
+      ],
+      "Experience": "Jun 2018",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/monica.cheng",
+        "Twitter": "https://www.twitter.com/chengmonica",
+        "Linkedin": "https://www.linkedin.com/monica.cheng",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/chengmonica"
+      }
+    },
+    {
+      "ID": 160602,
+      "Status": "current",
+      "Name": {
+        "Full": "Lilly Bouton",
+        "Alias": "Lilly Bouton",
+        "Short": "Lilly Bouton"
+      },
+      "Citizenship": "Australia",
+      "Country": "AU",
+      "Location": [
+        "New South Wales",
+        "Sydney"
+      ],
+      "Account": "APAC BU",
+      "Designation": "Sr Associate",
+      "Bio": "<p>Baseball fan, risk-taker, music blogger, vintage furniture lover and brand builder. Doing at the crossroads of simplicity and intellectual purity to craft an inspiring, compelling and authentic brand narrative.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br> I'm fueled by craft beer, hip-hop and tortilla chips.</p>",
+      "Skillset": [
+        "Quality Assurance",
+        "QA"
+      ],
+      "Skills": [
+        "QA",
+        "Excel",
+        "Skill 3",
+        "Skill 4",
+        "Skill 5",
+        "Skill 6"
+      ],
+      "Reporting Manager": {
+        "Name": "Huge Jockman",
+        "Email": "huge.jockman@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "First Abu Dhabi Bank",
+          "Logo": "FAB-logo",
+          "Start": "12-07-2014",
+          "End": "11-07-2015"
+        },
+        {
+          "Name": "Emirates NBD",
+          "Logo": "emirates-logo",
+          "Start": "01-09-2015",
+          "End": "30-06-2016"
+        },
+        {
+        "Name": "Emirates NBD",
+        "Logo": "emirates-logo",
+        "Start": "01-07-2016",
+        "End": "30-12-2016"
+        },
+        {
+        "Name": "First Abu Dhabi Bank",
+        "Logo": "FAB-logo",
+        "Start": "15-01-2017",
+        "End": "14-01-2018"
+        },
+        {
+        "Name": "Emirates NBD",
+        "Logo": "emirates-logo",
+        "Start": "01-02-2018",
+        "End": "30-07-2018"
+        }
+      ],
+      "Experience": "Jan 2014",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/lilly.bouton",
+        "Twitter": "https://www.twitter.com/boutonlilly",
+        "Linkedin": "https://www.linkedin.com/lilly.bouton",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/boutonlilly"
+      }
+    },
+    {
+      "ID": 160701,
+      "Status": "billed",
+      "Name": {
+        "Full": "Shannon Webber",
+        "Alias": "Shannon Webber",
+        "Short": "W. Shannon"
+      },
+      "Citizenship": "USA",
+      "Country": "US",
+      "Location": [
+        "Charlotte",
+        "NC, USA"
+      ],
+      "Account": "Charlotte BU",
+      "Designation": "Lead",
+      "Bio": "<p>Football fan, risk-taker, hiphop head, reclaimed wood collector and typography affectionado. Producing at the intersection of aesthetics and computer science to craft experiences both online and in real life. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br>My opinions belong to nobody but myself.</p>",
+      "Skillset": [
+        "Java",
+        "Java"
+      ],
+      "Skills": [
+        "Java",
+        "Python",
+        "Skill 3",
+        "Skill 4",
+        "Skill 5",
+        "Skill 6"
+      ],
+      "Reporting Manager": {
+        "Name": "Ronald Tramp",
+        "Email": "ronald.tramp@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "First Abu Dhabi Bank",
+          "Logo": "FAB-logo",
+          "Start": "15-01-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Emirates NBD",
+          "Logo": "emirates-logo",
+          "Start": "01-02-2018",
+          "End": "30-07-2018"
+        }
+      ],
+      "Experience": "Jan 2015",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/shannon.webber",
+        "Twitter": "https://www.twitter.com/webbyshannon",
+        "Linkedin": "https://www.linkedin.com/shannon.webber",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/webbyshannon"
+      }
+    },
+    {
+      "ID": 160702,
+      "Status": "billed",
+      "Name": {
+        "Full": "Jane Doe",
+        "Alias": "Jane Doe",
+        "Short": "Jane Doe"
+      },
+      "Citizenship": "England",
+      "Country": "UK",
+      "Location": [
+        "London",
+        "London"
+      ],
+      "Account": "London BU",
+      "Designation": "UI Developer",
+      "Bio": "<p>Snowboarder, coffee addict, DJ, Swiss design-head and doodler. Producing at the junction of design and sustainability to craft an inspiring, compelling and authentic brand narrative. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br> Nothing ventured, nothing gained.</p>",
+      "Skillset": [
+        "Digital",
+        "Digital"
+      ],
+      "Skills": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Python",
+        "Sketch",
+        "Photoshop"
+      ],
+      "Reporting Manager": {
+        "Name": "Deli Alle",
+        "Email": "deli.alle@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "First Abu Dhabi Bank",
+          "Logo": "FAB-logo",
+          "Start": "15-01-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Emirates NBD",
+          "Logo": "emirates-logo",
+          "Start": "01-02-2018",
+          "End": "30-07-2018"
+        }
+      ],
+      "Experience": "July 2016",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/shannon.webber",
+        "Twitter": "https://www.twitter.com/webbyshannon",
+        "Linkedin": "https://www.linkedin.com/shannon.webber",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/webbyshannon"
+      }
+    },
+    {
+      "ID": 160703,
+      "Status": "blocked",
+      "Name": {
+        "Full": "Mira Vitomirović",
+        "Alias": "Mira Vitomirović",
+        "Short": "V. Mira"
+      },
+      "Citizenship": "Serbia",
+      "Country": "RS",
+      "Location": [
+        "Novi Sad",
+        "Novi Sad"
+      ],
+      "Account": "H1/L1 Visa",
+      "Designation": "UX Designer",
+      "Bio": "<p>Hiking addict, doer, record lover, Saul Bass fan and doodler. Operating at the sweet spot between beauty and function to craft experiences that go beyond design. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br> Check me out on Dribbble or Medium.</p>",
+      "Skillset": [
+        "Digital",
+        "Digital"
+      ],
+      "Skills": [
+        "Sketch",
+        "Invision",
+        "Microsoft",
+        "UX",
+        "UI",
+        "Adobe XD"
+      ],
+      "Reporting Manager": {
+        "Name": "Drago Bašič",
+        "Email": "drago.basic@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "First Abu Dhabi Bank",
+          "Logo": "FAB-logo",
+          "Start": "15-01-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Emirates NBD",
+          "Logo": "emirates-logo",
+          "Start": "01-02-2018",
+          "End": "30-07-2018"
+        }
+      ],
+      "Experience": "July 2017",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/mira.vitomirovic",
+        "Twitter": "https://www.twitter.com/miravic",
+        "Linkedin": "https://www.linkedin.com/mira.vitomirovic",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/miravic"
+      }
+    },
+    {
+      "ID": 160801,
+      "Status": "current",
+      "Name": {
+        "Full": "Vsevolod Tretyakov",
+        "Alias": "Vsevolod Tretyakov",
+        "Short": "T. Vsevolod"
+      },
+      "Citizenship": "Russia",
+      "Country": "RU",
+      "Location": [
+        "Dubai",
+        "Dubai"
+      ],
+      "Account": "Dubai BU",
+      "Designation": "Data Scientist",
+      "Bio": "<p>Soccer lover, risk-taker, guitarist, Mad Men fan and OCAD grad. Performing at the intersection of aesthetics and intellectual purity to craft delightful brand experiences. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br> Concept is the foundation of everything else.</p>",
+      "Skillset": [
+        "Data Science",
+        "DSG"
+      ],
+      "Skills": [
+        "Database",
+        "SQL",
+        "Python",
+        "Skill 4",
+        "Skill 5",
+        "Skill 6",
+        "Skill 7",
+        "Skill 8",
+        "Skill 9",
+        "Skill 10",
+        "Skill 11",
+        "Skill 12"
+      ],
+      "Reporting Manager": {
+        "Name": "Vyacheslav Korovin",
+        "Email": "vyacheslav.korovin@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "First Abu Dhabi Bank",
+          "Logo": "FAB-logo",
+          "Start": "15-01-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Emirates NBD",
+          "Logo": "emirates-logo",
+          "Start": "01-02-2018",
+          "End": "30-07-2018"
+        }
+      ],
+      "Experience": "Aug 2010",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/vsevolod.tretyakov",
+        "Twitter": "https://www.twitter.com/tretyakovolod",
+        "Linkedin": "https://www.linkedin.com/vsevolod.tretyakov",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/tretyakovolod"
+      }
+    }
+  ]
