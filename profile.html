@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
+    
 
   <!-- START nav -->
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index">
         <img src="images/logo.svg" width="180px" alt="SyneTalent"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +30,9 @@
       <div class="collapse navbar-collapse navsearch" id="ftco-nav">
         <div class="field-icon-wrap navbar-nav ml-auto">
           <div class="icon"><span class="ion-ios-search"></span></div>
-          <input type="text" id="search" name="query" class="form-control">
+          <form method="get" action="search">
+            <input type="text" id="search" name="query" class="form-control">
+          </form>
         </div>
       </div>
     </div>
@@ -36,7 +40,7 @@
   <!-- END nav -->
 
   <!-- START header -->
-  <div class="block-hero-full item bg-yellow" style="background-image: url('images/uk.jpg');" data-stellar-background-ratio="0.5"></div>
+  <div id="hero" class="block-hero-full item bg-yellow" style="background-image: url('images/default-map.jpg');" data-stellar-background-ratio="0.5"></div>
   <!-- End header -->
 
   <!-- Bio box -->
@@ -47,59 +51,61 @@
           <div class="block-bio">
             <div class="vcard">
               <div class="d-flex">
-                <div class="image billed">
-                  <img src="images/person_1.jpg" alt="Person here">
+                <div class="image current" id="status">
+                  <img id="thumbnail" src="images/portrait_placeholder.png" alt="Person here">
                   <div class="status"></div>
                 </div>
                 <div class="name-text">
-                  <h2 class="heading">Jane Doe <img src="css/flags/blank.gif" class="ml-2 d-md-none flag flag-gb" alt="England" /></h2>
-                  <span class="meta">UI Developer</span>
+                  <h2 class="heading"><span id="name">Name</span> <img src="css/flags/blank.gif" class="ml-2 d-md-none flag flag-gb" alt="England" /></h2>
+                  <div id="designation" class="meta">Designation</div>
                   <div class="details row">
                     <div class="col-4">
                       <div class="row">
-                        <div class="col-3 icon">
+                        <div class="col-12 col-md-3 icon">
                           <i class="icon-flag"></i>
                         </div>
-                        <div class="col-9 text">
-                          England
+                        <div id="country" class="col-12 col-md-9 text-truncate text">
+                          Citizen
                         </div>
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="row">
-                        <div class="col-3 icon">
+                        <div class="col-12 col-md-3 icon">
                           <i class="icon-map-marker"></i>
                         </div>
-                        <div class="col-9 text">
-                          London
+                        <div id="location" class="col-12 col-md-9 text-truncate text">
+                          Location
                         </div>
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="row">
-                        <div class="col-3 icon">
-                          <i class="icon-list"></i>
+                        <div class="col-12 col-md-3 icon">
+                          <i class="icon-user"></i>
                         </div>
-                        <div class="col-9 text">
-                          Digital
+                        <div id="account" class="col-12 col-md-9 text-truncate text">
+                          Account
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
-                <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>  
-              </div>
-              <div class="social-media text-center mt-4">
-                <div class="tagcloud">
-                  <a href="#" class="tag-cloud-link">Facebook</a>
-                  <a href="#" class="tag-cloud-link">Twitter</a>
-                  <a href="#" class="tag-cloud-link">Linkedin</a>
-                  <a href="#" class="tag-cloud-link">Google +</a>
-                  <a href="#" class="tag-cloud-link">Github</a>
+                <div class="experience">
+                  <div id="experience" class="exp-box">
+                  </div>
                 </div>
+              </div>
+              <div id="bio" class="bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.<br><br>
+                Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>  
+              </div>
+              <div class="socialmedia text-center mt-4">
+                <a id="fb" href="#">Facebook</a>
+                <a id="tweet" href="#">Twitter</a>
+                <a id="linkedin" href="#">Linkedin</a>
+                <a id="google" href="#">Google +</a>
+                <a id="git" href="#">Github</a>
               </div>
             </div>
           </div>
@@ -111,37 +117,45 @@
 
   <!-- START main -->
   <div class="bg-yellow">
-    <div class="container pt-2">
+    <div class="container pt-2 pb-2">
 
-      <div class="row">
+      <div class="d-flex row">
 
         <div class="col-md-8">
           <div class="project-box">
-            <h2 class="mb-3">Project History</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
-            <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
+            <h3>Project History</h3>
+            <div id="project"></div>
           </div>
         </div> <!-- .col-md-8 -->
 
         <div class="col-md-4 sidebar">
           <div class="sidebar-box">
             <h3>Skills</h3>
-            <div class="tagcloud">
-              <a href="#" class="tag-cloud-link">Life</a>
-              <a href="#" class="tag-cloud-link">Sport</a>
-              <a href="#" class="tag-cloud-link">Tech</a>
-              <a href="#" class="tag-cloud-link">Travel</a>
-              <a href="#" class="tag-cloud-link">Life</a>
-              <a href="#" class="tag-cloud-link">Sport</a>
-              <a href="#" class="tag-cloud-link">Tech</a>
-              <a href="#" class="tag-cloud-link">Travel</a>
+            <div id="skillcloud">
+              <div>Skill long</div>
+              <div>Skill longer</div>
+              <div>Skill </div>
+              <div>Skill </div>
+              <div>Skill </div>
+              <div>Skill long</div>
+              <div>Skill </div>
+              <div>Skill longer</div>
+              <div>Skill </div>
+              <div>Skill longer</div>
+              <div>Skill </div>
+              <div>Skill long</div>
             </div>
           </div>
           <div class="sidebar-box">
             <h3>Contacts</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-            <p><a href="#" class="btn btn-primary btn-lg">Read More</a></p>
+             <div class="contact">
+                <h3>Reporting Manager</h3>
+                <div id="manager">
+                    <p>Lorem ipsum dolor sit amet. </p>
+                </div>
+                <a id="email" href="mailto:" class="btn btn-primary btn-view"><i class="icon-envelope"></i> &nbsp; Send mail</a>
+            </div>
+               
           </div>
         </div>
 
@@ -154,11 +168,9 @@
   <!-- START footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row pt-5">
-        <div class="col-md-12 text-left">
-          <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-          </p>
+      <div class="row">
+        <div class="col-md-12 text-right">
+          &copy;<script>document.write(new Date().getFullYear());</script> SYNECHRON. ALL RIGHTS RESERVED.
         </div>
       </div>
     </div>
@@ -166,8 +178,12 @@
   <!-- End footer -->
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+  <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#000"/>
+      </svg>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -177,14 +193,9 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
 
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
 
   </body>
 </html>
