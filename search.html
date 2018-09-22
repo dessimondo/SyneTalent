@@ -17,7 +17,7 @@
   <body>
 
   <!-- START nav -->
-  <nav class="navbar navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="images/logo.svg" width="180px" alt="SyneTalent"/>
@@ -73,6 +73,7 @@
                       <option value="ON">Ontario</option>
                       <option value="QU">Quebec</option>
                       <option value="" disabled>Europe</option>
+                      <option value="LO">London</option>
                       <option value="PR">Paris</option>
                       <option value="AM">Amstadam</option>
                       <option value="ZU">Zurich</option>
@@ -106,12 +107,12 @@
                     <select name="designation" id="" class="form-control">
                       <option value="" disabled selected>Designation</option>
                       <option value="">-- Any designation --</option>
-                      <option value="Designer">Designer</option>
-                      <option value="Developer">Developer</option>
-                      <option value="Strategists">Strategists</option>
-                      <option value="Tech">Technologists</option>
-                      <option value="Data">Data Scientists</option>
-                      <option value="Data">Others</option>
+                      <option value="designer">Designer</option>
+                      <option value="developer">Developer</option>
+                      <option value="strategist">Strategists</option>
+                      <option value="tech">Technologists</option>
+                      <option value="data">Data Scientists</option>
+                      <option value="others">Others</option>
                     </select>
                   </div>
                 </div>
@@ -121,13 +122,13 @@
                     <select name="skillset" id="" class="form-control">
                       <option value="" disabled selected>Skillset</option>
                       <option value="">-- Any skillset --</option>
-                      <option value="Digital">Digital</option>
-                      <option value="DSG">Data Science</option>
-                      <option value="Java">Java</option>
-                      <option value="Microsoft">Microsoft</option>
-                      <option value="QA">Quality Assurance</option>
-                      <option value="SBC">Business Consulting</option>
-                      <option value="Others">Others</option>
+                      <option value="digital">Digital</option>
+                      <option value="dsg">Data Science</option>
+                      <option value="java">Java</option>
+                      <option value="microsoft">Microsoft</option>
+                      <option value="qa">Quality Assurance</option>
+                      <option value="sbc">Business Consulting</option>
+                      <option value="others">Others</option>
                     </select>
                   </div>
                 </div>
@@ -139,8 +140,9 @@
                       <option value="">-- Any account --</option>
                       <option value="Dubai">Dubai</option>
                       <option value="Charlotte">Charlotte</option>
-                      <option value="Singapore">Singapore</option>
-                      <option value="Amstadam">Amstadam</option>
+                      <option value="APAC">APAC</option>
+                      <option value="London">London</option>
+                      <option value="H1">H1/L1</option>
                     </select>
                   </div>
                 </div>
@@ -213,10 +215,10 @@
 
     <div class="container">
       <div class="text-center">
-        <p>10 records found</p>
+        <p id="records">No records found</p>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
+      <div id="listing" class="row">
+        <!-- <div class="col-md-6 col-lg-4">
 
           <div class="block-profilecard">
             <div class="flag-bg d-none d-md-block">
@@ -479,7 +481,7 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
       </div>
 
       <div class="row mt-5">
@@ -534,5 +536,6 @@
   <script src="js/owl.carousel.min.js"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
   </body>
 </html>

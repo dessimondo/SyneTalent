@@ -245,8 +245,7 @@ Date.daysBetween = function( date1, date2 ) {
 	var difference_ms = date2_ms - date1_ms;        
 	// Convert back to years
 	var diff = Math.floor(difference_ms/one_year);
-	var diff_string = diff<1 ? "< 1 year" : diff + "+ years";
-	return diff_string; 
+	return diff; 
 	}
 
 var getParams = function() {

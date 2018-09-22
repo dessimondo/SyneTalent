@@ -11,7 +11,7 @@
       "Country": "SG",
       "Location": [
         "Singapore",
-        "Singapore"
+        "SG"
       ],
       "Account": "APAC BU",
       "Designation": "UI Designer",
@@ -67,7 +67,7 @@
       "Country": "AU",
       "Location": [
         "New South Wales",
-        "Sydney"
+        "NSW"
       ],
       "Account": "APAC BU",
       "Designation": "Sr Associate",
@@ -141,10 +141,10 @@
       "Country": "US",
       "Location": [
         "Charlotte",
-        "NC, USA"
+        "NC"
       ],
       "Account": "Charlotte BU",
-      "Designation": "Lead",
+      "Designation": "Tech Lead",
       "Bio": "<p>Football fan, risk-taker, hiphop head, reclaimed wood collector and typography affectionado. Producing at the intersection of aesthetics and computer science to craft experiences both online and in real life. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. <br><br>My opinions belong to nobody but myself.</p>",
       "Skillset": [
         "Java",
@@ -202,7 +202,7 @@
       "Country": "UK",
       "Location": [
         "London",
-        "London"
+        "LO"
       ],
       "Account": "London BU",
       "Designation": "UI Developer",
@@ -263,7 +263,7 @@
       "Country": "RS",
       "Location": [
         "Novi Sad",
-        "Novi Sad"
+        "NO"
       ],
       "Account": "H1/L1 Visa",
       "Designation": "UX Designer",
@@ -319,7 +319,7 @@
       "Country": "RU",
       "Location": [
         "Dubai",
-        "Dubai"
+        "DB"
       ],
       "Account": "Dubai BU",
       "Designation": "Data Scientist",
@@ -384,7 +384,7 @@
           "End": "30-07-2018"
         }
       ],
-      "Experience": "Aug 2013",
+      "Experience": "Aug 2012",
       "Social Media": {
         "Facebook": "https://www.facebook.com/vsevolod.tretyakov",
         "Twitter": "https://www.twitter.com/tretyakovolod",
