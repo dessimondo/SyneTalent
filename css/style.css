@@ -1342,7 +1342,6 @@ pre {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   background-color: transparent; }
   .table th, .table td {
     padding: 0.5rem;
@@ -8217,15 +8216,16 @@ input#search.form-control {
   .block-search {
     margin-top: -130px; }
 }
-.block-bio {
-  margin-top: 62px; }
+.block-profile {
+  padding-top: 62px; }
 @media (min-width: 768px) {
-  .block-bio {
+  .block-profile {
+    padding-top: 0px;
     margin-top: -80vh;
    } 
 }
 @media (min-width: 992px) {
-  .block-bio {
+  .block-profile {
     margin-top: -60vh; } 
 }
 .block-quicksearch, .block-search, .block-bio {
@@ -8679,14 +8679,14 @@ input#search.form-control {
         top: -60px;
       }
       .block-bio .vcard .d-flex .name-text {
-        flex: 0 0 60%;
+        flex: 0 0 65%;
         padding-top: 80px;
         text-align: left;
       }
       .block-bio .vcard .d-flex .experience {
         flex: 0 0 100px;
         margin-top: 85px;
-        margin-left: -30px;
+        margin-left: -14%;
       }
       .block-bio .vcard .d-flex .name-text .heading {
         margin: 0;
