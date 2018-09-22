@@ -37,7 +37,7 @@ params = getParams();
                     txt += "<tbody>";
                     for (y in hist) {
                       txt = txt + "<tr><td><img src=\"images/"
-                      + hist[y].Logo + ".png\"></td><td>"
+                      + hist[y].Logo + "\"></td><td>"
                       +  hist[y].Name +  "</td><td>"
                       +  hist[y].Start +  "</td><td>"
                       +  hist[y].End +  "</td></tr>";
