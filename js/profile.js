@@ -26,6 +26,7 @@ xmlhttp.onreadystatechange = function() {
               document.getElementById("account").innerHTML = myObj[x].Account;
               document.getElementById("bio").innerHTML = myObj[x].Bio;
               document.getElementById("experience").innerHTML = exp;
+              document.getElementById("experience").classList = ("exp-box hvr-grow");
               document.getElementById("fb").href = myObj[x]["Social Media"].Facebook;
               document.getElementById("tweet").href = myObj[x]["Social Media"].Twitter;
               document.getElementById("linkedin").href = myObj[x]["Social Media"].Linkedin;
@@ -37,7 +38,7 @@ xmlhttp.onreadystatechange = function() {
               txt = "<table class=\"table\"><thead><tr><th></th><th>Projects</th><th>Start</th><th>End</th></tr></thead>";
               txt += "<tbody>";
               for (y in hist) {
-                txt = txt + "<tr><td><img src=\"images/"
+                txt = txt + "<tr><td><img class=\"hvr-grow\" src=\"images/"
                 + hist[y].Logo + "\"></td><td>"
                 +  hist[y].Name +  "</td><td>"
                 +  hist[y].Start +  "</td><td>"
@@ -49,7 +50,7 @@ xmlhttp.onreadystatechange = function() {
               skill = document.getElementById("skillcloud");
               skill.innerHTML = "";
               for (z in skillset) {
-                skill.innerHTML +=  "<div>" + skillset[z] + "</div>";
+                skill.innerHTML +=  "<div class=\"hvr-grow\">" + skillset[z] + "</div>";
               }
 
               document.getElementById("manager").innerHTML = myObj[x]["Reporting Manager"].Name;
@@ -59,6 +60,6 @@ xmlhttp.onreadystatechange = function() {
         }
     }
 };
-xmlhttp.open("GET", "BU_Report_28082018.json", true);
+xmlhttp.open("GET", "data.json", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send("x=" + dbParam);

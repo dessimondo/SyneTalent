@@ -56,19 +56,6 @@ $(document).ready(function($) {
     	animateIn: 'fadeIn',
 		});
 
-		$('.nonloop').owlCarousel({
-	    center: true,
-	    items:2,
-	    loop:false,
-	    margin:10,
-	    nav: true,
-			navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-	    responsive:{
-        600:{
-          items:2
-        }
-	    }
-		});
 	};
 	carousel();
 
@@ -80,17 +67,17 @@ $(document).ready(function($) {
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
 
-			if (st > 150) {
+			if (st > 50) {
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');	
 				}
 			} 
-			if (st < 150) {
+			if (st < 50) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
 				}
 			} 
-			if ( st > 350 ) {
+			if ( st > 250 ) {
 				if ( !navbar.hasClass('awake') ) {
 					navbar.addClass('awake');	
 				}
@@ -99,7 +86,7 @@ $(document).ready(function($) {
 					sd.addClass('sleep');
 				}
 			}
-			if ( st < 350 ) {
+			if ( st < 250 ) {
 				if ( navbar.hasClass('awake') ) {
 					navbar.removeClass('awake');
 					navbar.addClass('sleep');

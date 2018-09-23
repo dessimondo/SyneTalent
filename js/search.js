@@ -27,6 +27,7 @@
     var obj, dbParam, xmlhttp, myObj, x;
     var namestr, printstr, desigstr, skillstr1, skillstr2, locationstr, acctstr, expstr, statstr;
     var matchcount = 0;
+    var pagination = false;
     var today = new Date();
     obj = { table: "search" };
     dbParam = JSON.stringify(obj);
@@ -35,11 +36,17 @@
         if (this.readyState == 4 && this.status == 200) {
             myObj = JSON.parse(this.responseText);
             for (x in myObj) {
+                if (matchcount >= 6) {
+                    pagination = true;
+                    matchcount++;
+                    continue;
+                } 
                 namestr = myObj[x].Name.Full.toLowerCase();
                 desigstr = myObj[x].Designation.toLowerCase();
                 skillstr1 = myObj[x].Skillset[0].toLowerCase();
                 skillstr2 = myObj[x].Skillset[1].toLowerCase();
-                locationstr = myObj[x].Location[1];
+                locationstr1 = myObj[x].Location[0].toLowerCase();
+                locationstr2 = myObj[x].Location[1];
                 acctstr = myObj[x].Account;
                 var startDate = new Date("1 " + myObj[x].Experience);
                 var exp = Date.daysBetween(startDate, today);
@@ -51,8 +58,8 @@
                     expstr = "jr";
                 }
                 statstr = myObj[x].Status;
-                if (namestr.includes(key)||desigstr.includes(key)||skillstr1.includes(key)||skillstr2.match(key)) {
-                    if (locationkey != "undefined" && !locationstr.match(locationkey)) { continue; }
+                if (namestr.includes(key)||desigstr.includes(key)||skillstr1.includes(key)||skillstr2.match(key)||locationstr1.includes(key)) {
+                    if (locationkey != "undefined" && !locationstr2.match(locationkey)) { continue; }
                     if (desigkey != "undefined" && !desigstr.includes(desigkey)) { continue; }
                     if (skillkey != "undefined" && !skillstr2.match(skillkey)) { continue; }
                     if (acctkey != "undefined" && !acctstr.match(acctkey)) { continue; }
@@ -64,17 +71,19 @@
                 }                                                     
             }
             if (matchcount == 1) {
-                document.getElementById("records").innerText = matchcount + " record found";
+                document.getElementById("records").innerHTML = matchcount + " record found";
             } else if (matchcount > 1) {
-                document.getElementById("records").innerText = matchcount + " records found";
+                document.getElementById("records").innerHTML = matchcount + " records found";
             } else {
-                document.getElementById("records").innerText = "No records found";
+                document.getElementById("records").innerHTML = "No records found";
             }
             if (key != '') {
-                document.getElementById("records").innerText += " for \'" + query + "\'";
+                document.getElementById("records").innerHTML += " for <span style=\"color: #858585; text-decoration: underline;\">" + query + "</span>";
             }
+            pagination ? document.getElementById("pagination").classList += ("show") : document.getElementById("pagination").classList = ("row pagination-box");
+            pagination = false;
         }
     };
-    xmlhttp.open("GET", "BU_Report_28082018.json", true);
+    xmlhttp.open("GET", "data.json", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("x=" + dbParam);

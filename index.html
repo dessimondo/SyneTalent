@@ -20,13 +20,14 @@
       <a class="navbar-brand" href="/">
         <img src="images/logo.svg" width="180px" alt="SyneTalent"/>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" data-target="#ftco-search" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle search">
+        <span class="icon-search pr-3"></span>
+        <span class="icon-chevron-up pr-3"></span>
       </button>
 
       <div class="collapse navbar-collapse navsearch" id="ftco-nav">
         <div class="field-icon-wrap navbar-nav ml-auto">
-          <div class="icon"><span class="ion-ios-search"></span></div>
+          <div class="icon"><span class="icon-search"></span></div>
           <form method="get" action="search">
             <input type="text" id="search" name="query" class="form-control">
           </form>
@@ -85,6 +86,7 @@
                 </div>
                 <div class="col-md-6 mb-lg-0 col-lg-4">
                   <!-- <label for="search">Search</label> -->
+                  <input type="hidden" name="status" value="current">
                   <input type="text" id="search" name="query" class="form-control" placeholder="Try &#34;UX Designer&#34;...">
                 </div>
 
@@ -94,7 +96,7 @@
                     <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
                     <select name="location" id="" class="form-control">
                       <option value="" disabled selected>Location</option>
-                      <option value="">-- Any location --</option>
+                      <option value="">Any location</option>
                       <option value="" disabled>N.America</option>
                       <option value="NY">New York</option>
                       <option value="NJ">New Jersey</option>
@@ -140,13 +142,14 @@
                     <div class="icon"><span class="ion-md-arrow-dropdown"></span></div>
                     <select name="skillset" id="" class="form-control">
                       <option value="" disabled selected>Skillset</option>
-                      <option value="">-- Any skillset --</option>
+                      <option value="">Any skillset</option>
                       <option value="digital">Digital</option>
                       <option value="dsg">Data Science</option>
                       <option value="java">Java</option>
                       <option value="microsoft">Microsoft</option>
                       <option value="qa">Quality Assurance</option>
                       <option value="sbc">Business Consulting</option>
+                      <option value="ba">Business Analysis</option>
                       <option value="others">Others</option>
                     </select>
                   </div>
@@ -207,7 +210,7 @@
          <div class="col-sm-6 col-lg-2">
 
             <div class="block-quicklinks hvr-grow">
-              <a href="search?designation=strategist">
+              <a href="search?designation=analyst">
                 <div class="image">
                   <img src="images/img_3.jpg" alt="Image placeholder">
                 </div>
@@ -261,7 +264,7 @@
   <!-- END Quick Links -->
 
   <!-- START Map -->
-  <div class="site-section bg-yellow d-none d-lg-block">
+  <div class="site-section bg-yellow">
     <div class="container">
       <!-- START Map Header -->
       <div class="row">
@@ -272,339 +275,149 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 bg-dark rounded-top shadow">
+        <div class="col-12 bg-dark rounded-top shadow map-box d-none d-sm-block">
           <img class="mt-4 mb-4" src="images/global-map.png" width="100%">
+          <div class="overlay">
+            <div class="amsterdam-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">Amsterdam</span>
+                </a>
+            </div>
+            <div class="apac-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <div class="tooltip">Asia - Pacific</div>
+                </a>
+            </div>
+            <div class="charlotte-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">Charlotte</span>
+                </a>
+            </div>
+            <div class="ny-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">New York</span>
+                </a>
+            </div>
+            <div class="us-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">US Central</span>
+                </a>
+            </div>
+            <div class="london-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">London</span>
+                </a>
+            </div>
+            <div class="mideast-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip">Middle East</span>
+                </a>
+            </div>
+            <div class="others-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip show">Others</span>
+                </a>
+            </div>
+            <div class="visa-marker">
+                <a href="javascript:void(0)">
+                  <div class="map-points"></div>  
+                  <span class="tooltip show">H1/L1 Visa</span>
+                </a>
+            </div>
+          </div>
         </div>
-
-        <div class="col-12 bg-white shadow">
-          <div class="arrow-down-dark"></div>
+        <div class="col-12 bg-white rounded-top shadow map-box d-sm-none">
+            <div class="row text-center">
+                <div class="col-12">
+                  <select name="skillset" id="" class="form-control">
+                    <option value="" disabled selected>Region</option>
+                    <option value="">Global</option>
+                    <option value="">Amsterdam</option>
+                    <option value="">APAC</option>
+                    <option value="">Charlotte</option>
+                    <option value="">London</option>
+                    <option value="">Middle East</option>
+                    <option value="">New York</option>
+                    <option value="">US Central</option>
+                    <option value="">Others</option>
+                    <option value="">H1/L1 Visa</option>
+                  </select> 
+                </div>
+            </div>
+        </div>
+        <div class="block-location col-12 bg-white rounded-bottom shadow">
+          <div class="arrow-down-dark d-none d-sm-block"></div>
           <div class="row">
-            <div class="block-location">
-              <div class="heading">
-                Dubai
+            <div class="col-6">
+              <span class="region-heading">Global</span>
+            </div>
+            <div class="col-6">
+              <div class="toggle-stats text-right">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                      View <span class="icon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item active"><a href="#">Bench</a></li>
+                      <li class="dropdown-item"><a href="#">Skills</a></li>
+                    </ul>
+                  </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   10
-                 </div>
-                 <div class="heading">
-                   Total
-                 </div>
-               </div>
-             </div>
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   3
-                 </div>
-                 <div class="heading">
-                   Designers
-                 </div>
-               </div>
-             </div>
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   3
-                 </div>
-                 <div class="heading">
-                   Developers
-                 </div>
-               </div>
-             </div>
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   1
-                 </div>
-                 <div class="heading">
-                   Strategists
-                 </div>
-               </div>
-             </div>
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   2
-                 </div>
-                 <div class="heading">
-                   Technologists
-                 </div>
-               </div>
-             </div>
-            <div class="col-2">
-               <div class="block-numbers hvr-grow">
-                 <div class="number">
-                   1
-                 </div>
-                 <div class="heading">
-                   Data Scientists
-                 </div>
-               </div>
-             </div>
-          </div>
-        </div>
-
-        <div class="col-12 bg-light rounded-bottom shadow">
-          <div class="arrow-down-white"></div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image current"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Nancy Green</h2>
-                      <span class="meta">UI Designer</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <div id="global" class="row show">
+            <div class="col-12 col-md-4">
+               <div class="block-numbers">
+                  <div class="circle">
+                    <div class="number">
+                      <p>233</p>
                     </div>
                   </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
+                  <div class="heading">
+                    Total
+                  </div>
                 </div>
               </div>
-
-            </div>
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image blocked"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Jane Doe</h2>
-                      <span class="meta">UI Developer</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="col-12 col-md-4">
+               <div class="block-numbers">
+                  <div class="circle">
+                    <div class="number">
+                      <p>178</p>
                     </div>
                   </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image billed"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Evans Charles</h2>
-                      <span class="meta">Data Scientist</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="heading">
+                   Offshore
+                  </div>
+               </div>
+             </div>
+            <div class="col-12 col-md-4">
+               <div class="block-numbers">
+                  <div class="circle">
+                    <div class="number">
+                      <p>55</p>
                     </div>
                   </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image current"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Nancy Green</h2>
-                      <span class="meta">UI Designer</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="heading">
+                    Onsite
                   </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image blocked"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Jane Doe</h2>
-                      <span class="meta">UI Developer</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6 col-lg-4">
-
-              <div class="block-profilecard">
-                <div class="flag-bg d-none d-md-block">
-                  <img src="images/default-flag.jpg" alt="flag">
-                </div>
-                <div class="vcard">
-                  <div class="d-flex">
-                    <div class="image billed"><img src="images/portrait_placeholder.png" alt="Person here"></div>
-                    <div class="name-text">
-                      <h2 class="heading">Evans Charles</h2>
-                      <span class="meta">Data Scientist</span>
-                      <div class="details row">
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-md-contact"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Bench
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-3 col-md-12 icon">
-                              <span class="ion-ios-construct"></span>
-                            </div>
-                            <div class="col-8 col-md-12 text">
-                              Skillset
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-primary btn-block" type="button">View</button>
-                </div>
-              </div>
-
-            </div>
+               </div>
+             </div>
           </div>
         </div>
       </div>
       <div class="row">
          <div class="mt-4
-                     col-sm-4 offset-sm-4
-                     col-lg-2 offset-lg-5">
+                    col-6 offset-3
+                    col-sm-4 offset-sm-4
+                    col-lg-2 offset-lg-5">
            <a href="search"><button class="btn btn-outline-primary btn-block btn-view">View All</button></a>
          </div>
       </div>
@@ -616,7 +429,10 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-          <div class="col-md-12 text-right">
+          <div class="col-12 col-lg-2 text-center">
+            <img src="images/logo.png" width="120px">
+          </div>
+          <div class="col-12 offset-lg-6 col-lg-4 text-center pt-3">
             &copy;<script>document.write(new Date().getFullYear());</script> SYNECHRON. ALL RIGHTS RESERVED.
           </div>
       </div>
