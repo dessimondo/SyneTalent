@@ -35,7 +35,7 @@
       "Project History": [
         {
           "Name": "Synechron Innovation",
-          "Logo": "synechron-logo",
+          "Logo": "synechron-logo.png",
           "Start": "01-08-2018",
           "End": "30-09-2018"
         },
@@ -130,6 +130,67 @@
       }
     },
     {
+      "ID": 160603,
+      "Status": "current",
+      "Name": {
+        "Full": "Dhiraj Krishnamurthy",
+        "Alias": "Dhiraj Krishna",
+        "Short": "K. Dhiraj"
+      },
+      "Citizenship": "India",
+      "Country": "IN",
+      "Location": [
+        "New York",
+        "NY"
+      ],
+      "Account": "New York BU",
+      "Designation": "Associate - Technology",
+      "Bio": "<p>Football fan, risk-taker, hiphop head, reclaimed wood collector and typography affectionado. Producing at the intersection of aesthetics and computer science to craft experiences both online and in real life. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. <br><br>My opinions belong to nobody but myself.</p>",
+      "Skillset": [
+        "Java",
+        "Java"
+      ],
+      "Skills": [
+        "Java",
+        "Python",
+        "Skill 3",
+        "Skill 5",
+        "Skill 6",
+        "Skill 7",
+        "Skill 8",
+        "Skill 9",
+        "Skill 10",
+        "Skill 11",
+        "Skill 12"
+      ],
+      "Reporting Manager": {
+        "Name": "Ronald Tramp",
+        "Email": "ronald.tramp@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "Bank of America Merrill Lynch",
+          "Logo": "baml-logo.png",
+          "Start": "15-01-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Bank of America Merrill Lynch",
+          "Logo": "baml-logo.png",
+          "Start": "20-01-2018",
+          "End": "30-06-2018"
+        }
+      ],
+      "Experience": "Jan 2017",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/dhiraj.krishna",
+        "Twitter": "https://www.twitter.com/krirajna",
+        "Linkedin": "https://www.linkedin.com/dhiraj.krishna",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/krirajna"
+      }
+    },
+    {
       "ID": 160701,
       "Status": "billed",
       "Name": {
@@ -144,7 +205,7 @@
         "NC"
       ],
       "Account": "Charlotte BU",
-      "Designation": "Tech Lead",
+      "Designation": "Lead - Technology",
       "Bio": "<p>Football fan, risk-taker, hiphop head, reclaimed wood collector and typography affectionado. Producing at the intersection of aesthetics and computer science to craft experiences both online and in real life. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. <br><br>My opinions belong to nobody but myself.</p>",
       "Skillset": [
         "Java",
@@ -262,8 +323,8 @@
       "Citizenship": "Serbia",
       "Country": "RS",
       "Location": [
-        "Novi Sad",
-        "NO"
+        "Amstadam",
+        "AM"
       ],
       "Account": "H1/L1 Visa",
       "Designation": "UX Designer",
@@ -391,6 +452,120 @@
         "Linkedin": "https://www.linkedin.com/vsevolod.tretyakov",
         "Google": "https://plus.google.com/123456789",
         "Github": "https://www.github.com/tretyakovolod"
+      }
+    },
+    {
+      "ID": 160802,
+      "Status": "blocked",
+      "Name": {
+        "Full": "Veena Chandrini",
+        "Alias": "Veena Rini",
+        "Short": "C. Veena"
+      },
+      "Citizenship": "India",
+      "Country": "IN",
+      "Location": [
+        "Pune",
+        "PU"
+      ],
+      "Account": "H1/L1 Visa",
+      "Designation": "Business Analyst",
+      "Bio": "<p>Baseball fan, risk-taker, music blogger, vintage furniture lover and brand builder. Doing at the crossroads of simplicity and intellectual purity to craft an inspiring, compelling and authentic brand narrative.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et.  <br><br> I'm fueled by craft beer, hip-hop and tortilla chips.</p>",
+      "Skillset": [
+        "Business Analyst",
+        "BA"
+      ],
+      "Skills": [
+        "Data Analysis",
+        "Skill 2",
+        "Skill 3",
+        "Skill 4",
+        "Skill 5",
+        "Skill 6"
+      ],
+      "Reporting Manager": {
+        "Name": "Leelawati Gandhi",
+        "Email": "leelawati.gandhi@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "Standard Chartered Bank",
+          "Logo": "stanchart-logo.jpg",
+          "Start": "12-09-2016",
+          "End": "11-09-2017"
+        },
+        {
+          "Name": "Standard Chartered Bank",
+          "Logo": "stanchart-logo.jpg",
+          "Start": "15-10-2017",
+          "End": "14-01-2018"
+        },
+        {
+          "Name": "Standard Chartered Bank",
+          "Logo": "stanchart-logo.jpg",
+          "Start": "01-02-2018",
+          "End": "30-07-2018"
+        }
+      ],
+      "Experience": "Aug 2016",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/veena.chandrini",
+        "Twitter": "https://www.twitter.com/reeniveena",
+        "Linkedin": "https://www.linkedin.com/veena.chandrini",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/reeniveena"
+      }
+    },
+    {
+      "ID": 160803,
+      "Status": "current",
+      "Name": {
+        "Full": "Pravin Padmanabhan",
+        "Alias": "Pravin Manab",
+        "Short": "P. Pravin"
+      },
+      "Citizenship": "India",
+      "Country": "IN",
+      "Location": [
+        "Charlotte",
+        "NC"
+      ],
+      "Account": "Charlotte BU",
+      "Designation": "Specialist - Technology",
+      "Bio": "<p>Cyclist, maker, guitarist, Vignelli fan and New School grad. Operating at the crossroads of simplicity and purpose to create great work for living breathing human beings. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et.  <br><br> I'm a Microsoft specialist and this is my work.</p>",
+      "Skillset": [
+        "Microsoft",
+        "Microsoft"
+      ],
+      "Skills": [
+        "Microsoft",
+        "Python",
+        "Skill 3",
+        "Skill 5",
+        "Skill 6",
+        "Skill 7",
+        "Skill 8",
+        "Skill 9"
+      ],
+      "Reporting Manager": {
+        "Name": "Ronald Tramp",
+        "Email": "ronald.tramp@synechron.com"
+      },
+      "Project History": [
+        {
+          "Name": "Synechron Innovation",
+          "Logo": "synechron-logo.png",
+          "Start": "01-08-2018",
+          "End": "30-08-2018"
+        }
+      ],
+      "Experience": "Aug 2018",
+      "Social Media": {
+        "Facebook": "https://www.facebook.com/monica.cheng",
+        "Twitter": "https://www.twitter.com/chengmonica",
+        "Linkedin": "https://www.linkedin.com/monica.cheng",
+        "Google": "https://plus.google.com/123456789",
+        "Github": "https://www.github.com/chengmonica"
       }
     }
   ]
