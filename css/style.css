@@ -8887,6 +8887,133 @@ input#search.form-control {
   font-weight: 300;
   padding-left: 15px;
 }
+.block-location .bench-view,
+.block-location .skills-view {
+  display: none;
+}
+.block-location .show {
+  display: block;
+}
+.block-location .skill-box {
+  border: 1px solid #efefef;
+  border-radius: 11px;
+}
+.block-location .skill-box .skill .heading {
+  padding: 1rem;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #d5d5d5;
+}
+.block-location .skill-box .skill:first-child .heading {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.block-location .skill-box .skill:last-child .heading {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.chartbox {
+  color: #858585;
+  padding: 20px 0;
+}
+.chartbox:hover {
+  border-radius: 10px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.chartbox div[chart-type*="donut"] {
+  height: 250px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+.chartbox div.donut-hole {
+  height: 184px;
+  width: 184px;
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 184px;
+  line-height: 40px;
+}
+.chartbox span.donut-filling {
+  position: absolute;
+  display: block;
+  font-size: 60px;
+  top: 50%;
+  margin-top: -18px;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  cursor: default;
+  overflow: none;
+}
+.chartbox div.donut-caption-wrapper {
+  align-content: center;
+  position: relative;
+  top: 220px;
+}
+.chartbox span.donut-caption {
+  display: block;
+  text-align: center;
+  cursor: default;
+  margin: 0 auto;
+}
+.chartbox .donut-bite {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  top: 0;
+  left: 100px;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.chartbox .donut-bite.large {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+.chartbox .donut-bite:BEFORE {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  top: 0;
+  left: -100px;
+  border-radius: 100px 0 0 100px;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+.chartbox .donut-bite.large:BEFORE {
+  left: 0;
+}
+.chartbox .donut-bite.large:AFTER {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 100px;
+  border-radius: 0 100px 100px 0;
+}
 
 .block-quicklinks {
   overflow: hidden;

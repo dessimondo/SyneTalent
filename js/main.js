@@ -222,6 +222,24 @@ var toggleHide = function() {
 	}
 }
 
+var toggleView = function(toggle) {
+	var a = document.getElementById("bench-option");
+	var b = document.getElementById("skills-option");
+	var c = document.getElementById("global-bench");
+	var d = document.getElementById("global-skills");
+	if (toggle === "bench") {
+		a.classList.add("active");
+		b.classList.remove("active");
+		c.classList.add("show");
+		d.classList.remove("show");
+	} else {
+		a.classList.remove("active");
+		b.classList.add("active");
+		c.classList.remove("show");
+		d.classList.add("show");
+	}
+}
+
 Date.daysBetween = function( date1, date2 ) {   
 	//Get 1 year in milliseconds   
 	var one_year=1000*60*60*24*365;    

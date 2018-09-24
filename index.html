@@ -270,7 +270,7 @@
       <div class="row">
         <div class="section-heading mb-4">
           <h4 class="heading">
-            BROWSE BY <span style="color: #fff">LOCATION</span>
+            NUMBERS BY <span style="color: #fff">LOCATION</span>
           </h4>
         </div>
       </div>
@@ -363,54 +363,108 @@
               <div class="toggle-stats text-right">
                   <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                      View <span class="icon-chevron-down"></span>
+                      View <span class="icon-arrow_drop_down"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li class="dropdown-item active"><a href="#">Bench</a></li>
-                      <li class="dropdown-item"><a href="#">Skills</a></li>
+                      <li id="bench-option" class="dropdown-item active" onclick="toggleView('bench')"><a href="javascript:;">Bench</a></li>
+                      <li id="skills-option" class="dropdown-item" onclick="toggleView('skills')"><a href="javascript:;">Skills</a></li>
                     </ul>
                   </div>
               </div>
             </div>
           </div>
-          <div id="global" class="row show">
-            <div class="col-12 col-md-4">
-               <div class="block-numbers">
-                  <div class="circle">
-                    <div class="number">
-                      <p>233</p>
-                    </div>
-                  </div>
-                  <div class="heading">
-                    Total
+          <div id="global-bench" class="bench-view show">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="chartbox">
+                  <div id="chart" chart-type="donut", 
+                    data-chart-max="233", 
+                    data-chart-segments='{  "0":["0","83","#fae600"],  "1":["83","84","#b8d53a"],  "2":["167","66","#669966"]}',
+                    data-chart-caption="Total",
+                    data-chart-text="233">
                   </div>
                 </div>
               </div>
-            <div class="col-12 col-md-4">
-               <div class="block-numbers">
-                  <div class="circle">
-                    <div class="number">
-                      <p>178</p>
-                    </div>
+              <div class="col-12 col-md-4">
+                <div class="chartbox">
+                  <div id="chart2" chart-type="donut", 
+                    data-chart-max="178", 
+                    data-chart-segments='{  "0":["0","89","#858585"],  "1":["89","2","#d5d5d5"],  "2":["91","1","#fae600"],  "3":["92","60","#b8d53a"],  "4":["152","26", "#669966"]  }',
+                    data-chart-caption="Offshore",
+                    data-chart-text="178">
                   </div>
-                  <div class="heading">
-                   Offshore
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="chartbox">
+                  <div id="chart3" chart-type="donut",
+                    data-chart-max="55",
+                    data-chart-segments='{ "0":["0","21","#fae600"], "1":["21","34","#669966"] }',
+                    data-chart-caption="Onsite",
+                    data-chart-text="55">
                   </div>
-               </div>
-             </div>
-            <div class="col-12 col-md-4">
-               <div class="block-numbers">
-                  <div class="circle">
-                    <div class="number">
-                      <p>55</p>
-                    </div>
-                  </div>
-                  <div class="heading">
-                    Onsite
-                  </div>
-               </div>
-             </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div id="global-skills" class="skills-view">
+            <div class="skill-box">
+              <div class="skill">
+                  <div class="heading"><span class="icon-minus"></span> &nbsp; Digital</div>
+                  <div class="row bg-white">
+                      <div class="col-12 col-md-4">
+                        <div class="chartbox">
+                          <div id="chart4" chart-type="donut", 
+                            data-chart-max="24", 
+                            data-chart-segments='{  "0":["0","11","#fae600"],  "1":["11","6","#b8d53a"],  "2":["17","7","#669966"]}',
+                            data-chart-caption="Total",
+                            data-chart-text="24">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="chartbox">
+                          <div id="chart5" chart-type="donut", 
+                            data-chart-max="15", 
+                            data-chart-segments='{  "0":["0","13","#858585"],  "1":["13","0","#d5d5d5"],  "2":["13","0","#fae600"],  "3":["13","1","#b8d53a"],  "4":["14","1", "#669966"]  }',
+                            data-chart-caption="Offshore",
+                            data-chart-text="15">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="chartbox">
+                          <div id="chart6" chart-type="donut",
+                            data-chart-max="9",
+                            data-chart-segments='{ "0":["0","4","#fae600"], "1":["4","5","#669966"] }',
+                            data-chart-caption="Onsite",
+                            data-chart-text="9">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Data Science</div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Java</div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Microsoft</div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Others</div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Quality Assurance</div>
+              </div>
+              <div class="skill">
+                <div class="heading"><span class="icon-plus"></span> &nbsp; Business Consulting</div>
+              </div>
+            </div>
+              
+            </div>
         </div>
       </div>
       <div class="row">
@@ -458,6 +512,6 @@
   <script src="js/owl.carousel.min.js"></script>
 
   <script src="js/main.js"></script>
-
+  <script src="js/donut.js"></script>
   </body>
 </html>
